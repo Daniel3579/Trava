@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Trava" parent="Theme.AppCompat.Light">
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/green_lv_2</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/green_lv_1.5</item>
+        <item name="android:colorBackground">@color/green_lv_1</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat">
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/green_transparent</item>
+    </style>
+
+    <style name="Slider" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="color">@color/green_lv_1</item>
+        <item name="colorPrimary">@color/green_lv_2</item>
+        <item name="colorPrimaryDark">@color/green_lv_3</item>
+        <item name="colorAccent">@color/green_lv_4</item>
+        <item name="colorOnPrimary">@color/green_lv_2</item>
+        <item name="colorOnSurface">@color/green_lv_3</item>
+
+        <item name="android:textColor">@color/green_lv_2</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="tickColor">@color/green_lv_1</item>
+        <item name="backgroundTint">@color/green_lv_1</item>
+    </style>
+
+</resources>

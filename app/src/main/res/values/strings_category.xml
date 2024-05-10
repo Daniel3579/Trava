@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_1">Standard trees</string>
+    <string name="category_2">Half-steam trees</string>
+    <string name="category_3">Feathered trees</string>
+    <string name="category_4">Multi-stemmed trees</string>
+    <string name="category_5">Climate trees</string>
+    <string name="category_6">Trees for climbing</string>
+    <string name="category_7">Shade trees</string>
+    <string name="category_8">Characteristic trees</string>
+    <string name="category_9">Fruit trees</string>
+    <string name="category_10">Conifers</string>
+    <string name="category_11">Woodland planting stock</string>
+    <string name="category_12">Solitary shrubs</string>
+</resources>

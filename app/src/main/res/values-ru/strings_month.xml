@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="month_1">Янв</string>
+    <string name="month_2">Фев</string>
+    <string name="month_3">Мар</string>
+    <string name="month_4">Апр</string>
+    <string name="month_5">Май</string>
+    <string name="month_6">Июн</string>
+    <string name="month_7">Июл</string>
+    <string name="month_8">Авг</string>
+    <string name="month_9">Сен</string>
+    <string name="month_10">Окт</string>
+    <string name="month_11">Нояб</string>
+    <string name="month_12">Дек</string>
+    <string name="loading">Загрузка...</string>
+    <string name="no_data_found">Ничего не найдено</string>
+    <string name="search">Поиск</string>
+    <string name="plant_view_category">"Категория: "</string>
+    <string name="plant_view_climate">"Климат: "</string>
+    <string name="plant_view_luminosity">"Освещение: "</string>
+    <string name="plant_view_bloom">"Цветение: "</string>
+    <string name="sun">Солнце</string>
+    <string name="partial_shade">Частичное затенение</string>
+    <string name="shade">Тень</string>
+    <string name="clear">Очистить</string>
+    <string name="apply">Применить</string>
+</resources>

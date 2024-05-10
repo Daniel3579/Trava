@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/plant_view">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/holder_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--Category-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/category_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/filter_sub_view"
+                    android:paddingBottom="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/category_filter_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/filter_view_category"
+                        android:textColor="@color/green_lv_3"
+                        android:textSize="24dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/category_filter_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/category_view"
+                        app:layout_constraintEnd_toEndOf="@id/category_filter_text"
+                        app:layout_constraintStart_toStartOf="@id/category_filter_text"
+                        app:layout_constraintTop_toBottomOf="@id/category_filter_text">
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_1"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_2"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox1" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_3"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox2" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_4"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox3" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_5"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox4" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_6"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox5" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_7"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox6" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_8"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox7" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_9"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox8" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_10"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox9" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_11"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox10" />
+
+                        <CheckBox
+                            android:id="@+id/categoryCheckBox12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/category_12"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/categoryCheckBox11" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--Climate-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/climate_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/filter_sub_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/climate_filter_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/filter_view_climate"
+                        android:textColor="@color/green_lv_3"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/climateSlider"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:stepSize="1"
+                        android:theme="@style/Slider"
+                        android:valueFrom="1"
+                        android:valueTo="13"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/filter_climate_info"
+                        app:layout_constraintStart_toEndOf="@+id/climate_filter_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:values="@array/climate_slider_values" />
+
+                    <Button
+                        android:id="@+id/filter_climate_info"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/outline_info_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--Luminosity-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/luminosity_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/filter_sub_view"
+                    android:paddingBottom="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/luminosity_filter_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/filter_view_luminosity"
+                        android:textColor="@color/green_lv_3"
+                        android:textSize="24dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/luminosity_filter_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/luminosity_filter_text"
+                        app:layout_constraintStart_toStartOf="@id/luminosity_filter_text"
+                        app:layout_constraintTop_toBottomOf="@id/luminosity_filter_text">
+
+                        <CheckBox
+                            android:id="@+id/luminosityCheckBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/sun"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/luminosityCheckBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/partial_shade"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/luminosityCheckBox1" />
+
+                        <CheckBox
+                            android:id="@+id/luminosityCheckBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:fontFamily="@font/google_sans_medium"
+                            android:text="@string/shade"
+                            android:textColor="@color/green_lv_3"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/luminosityCheckBox2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--Bloom-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bloom_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_sub_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/bloom_filter_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/google_sans_bold"
+                        android:text="@string/filter_view_bloom"
+                        android:textColor="@color/green_lv_3"
+                        android:textSize="24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/bloomSlider"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:stepSize="1"
+                        android:theme="@style/Slider"
+                        android:valueFrom="1"
+                        android:valueTo="12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/bloom_filter_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:values="@array/bloom_slider_values" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--Buttons-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/holder_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <Button
+                android:id="@+id/button_apply"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_apply"
+                android:fontFamily="@font/google_sans_bold"
+                android:textAllCaps="false"
+                android:textSize="24dp"
+                android:textColor="@color/green_lv_4"
+                android:text="@string/apply"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider_for_buttons" />
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_clear"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/clear"
+                android:textColor="@color/green_lv_3"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/divider_for_buttons"/>
+
+            <View
+                android:id="@+id/divider_for_buttons"
+                android:layout_width="10dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/stroke"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/filter_view_stroke"
+            app:layout_constraintBottom_toTopOf="@+id/holder_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

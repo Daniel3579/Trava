@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_view_category">Категория</string>
+    <string name="filter_view_climate">Климат</string>
+    <string name="filter_view_luminosity">Освещение</string>
+    <string name="filter_view_bloom">Цветение</string>
+    <string name="login">Войти</string>
+    <string name="field_not_empty">Это поле не должно быть пустым</string>
+    <string name="correct_email">Введите корректный email</string>
+    <string name="signup">Зарегистрироваться</string>
+    <string name="password">Пароль</string>
+</resources>

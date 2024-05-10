@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="26dp"
+    tools:context=".LoginActivity">
+    
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:textColorHint="#BF317A31"
+        android:textColor="#BF317A31"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:textColorHint="#BF317A31"
+        android:textColor="#BF317A31"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+    
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_apply"
+        android:fontFamily="@font/google_sans_bold"
+        android:textAllCaps="false"
+        android:text="@string/login"
+        android:textColor="@color/green_lv_4"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/google_sans_bold"
+        android:text="@string/signup"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:textColor="#BF317A31"
+        android:textSize="24dp"/>
+
+</LinearLayout>

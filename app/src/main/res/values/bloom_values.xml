@@ -1,0 +1,6 @@
+<resources>
+    <array name="bloom_slider_values">
+        <item>1</item>
+        <item>12</item>
+    </array>
+</resources>

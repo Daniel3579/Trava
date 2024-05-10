@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_lv_1">#ccffcc</color>
+    <color name="green_lv_1.5">#9bdd9b</color>
+    <color name="green_lv_2">#71bd71</color>
+    <color name="green_lv_3">#317a31</color>
+    <color name="green_lv_4">#0b380b</color>
+    <color name="green_transparent">#019bdd9b</color>
+    <color name="green_test">#80000FFF</color>
+
+    <color name="yellow_lv_1">#ffffcc</color>
+    <color name="yellow_lv_2">#bcbc71</color>
+    <color name="yellow_lv_3">#7a7a30</color>
+    <color name="yellow_lv_4">#38380b</color>
+
+    <color name="red_lv_1">#ffcccc</color>
+    <color name="red_lv_2">#bc7171</color>
+    <color name="red_lv_3">#7a3030</color>
+    <color name="red_lv_4">#380b0b</color>
+
+    <color name="blue_lv_1">#ccddff</color>
+    <color name="blue_lv_2">#718abc</color>
+    <color name="blue_lv_3">#30497a</color>
+    <color name="blue_lv_4">#0b1a38</color>
+</resources>

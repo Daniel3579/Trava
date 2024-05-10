@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_1">Деревья с высоким стволом (стандарт)</string>
+    <string name="category_2">Деревья с невысоким стволом (полустандарт)</string>
+    <string name="category_3">Деревья с центральным стволом и ветвями от земли</string>
+    <string name="category_4">Многоствольные деревья</string>
+    <string name="category_5">Климатические деревья</string>
+    <string name="category_6">Деревья для лазанья</string>
+    <string name="category_7">Тенистые деревья</string>
+    <string name="category_8">Деревья с необычной формой роста</string>
+    <string name="category_9">Плодовые деревья</string>
+    <string name="category_10">Хвойные деревья</string>
+    <string name="category_11">Саженцы</string>
+    <string name="category_12">Кустарники-солитеры</string>
+</resources>

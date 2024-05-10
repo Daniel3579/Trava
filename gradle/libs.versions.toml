@@ -1,0 +1,63 @@
+[versions]
+activity = "1.9.0"
+agp = "8.3.2"
+appcompat = "1.6.1"
+cardview = "1.0.0"
+constraintlayout = "2.1.4"
+coreKtx = "1.13.1"
+espressoCore = "3.5.1"
+firebaseAnalytics = "21.6.2"
+firebaseBom = "32.8.1"
+firebaseConfig = "21.6.3"
+firebaseCrashlytics = "18.6.4"
+firebaseCrashlyticsGradle = "2.9.9"
+firebaseFirestore = "24.11.1"
+firebasePerf = "20.5.2"
+firebaseStorage = "20.3.0"
+firebaseUiStorage = "8.0.2"
+googleServices = "4.4.1"
+gradle = "8.3.2"
+gridlayout = "1.0.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+kotlin = "1.9.0"
+material = "1.11.0"
+multidex = "2.0.1"
+perfPlugin = "1.4.2"
+recyclerview = "1.3.2"
+roundedimageview = "2.3.0"
+navigationFragment = "2.7.7"
+
+[libraries]
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-gridlayout = { module = "androidx.gridlayout:gridlayout", version.ref = "gridlayout" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics", version.ref = "firebaseAnalytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-config = { module = "com.google.firebase:firebase-config", version.ref = "firebaseConfig" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+firebase-crashlytics-gradle = { module = "com.google.firebase:firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsGradle" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-perf = { module = "com.google.firebase:firebase-perf", version.ref = "firebasePerf" }
+firebase-storage = { module = "com.google.firebase:firebase-storage", version.ref = "firebaseStorage" }
+firebase-ui-auth = { module = "com.firebaseui:firebase-ui-auth", version.ref = "firebaseUiStorage" }
+firebase-ui-storage = { module = "com.firebaseui:firebase-ui-storage", version.ref = "firebaseUiStorage" }
+google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+perf-plugin = { module = "com.google.firebase:perf-plugin", version.ref = "perfPlugin" }
+roundedimageview = { module = "com.makeramen:roundedimageview", version.ref = "roundedimageview" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

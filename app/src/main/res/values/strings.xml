@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Plandscape</string>
+    <string name="loading" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="no_data_found">No data found</string>
+    <string name="search">Search</string>
+    <string name="plant_view_category">Category: </string>
+    <string name="plant_view_climate">Climate: </string>
+    <string name="plant_view_luminosity">Luminosity: </string>
+    <string name="plant_view_bloom">Bloom: </string>
+    <string name="filter_view_category">Category</string>
+    <string name="filter_view_climate">Climate</string>
+    <string name="filter_view_luminosity">Luminosity</string>
+    <string name="filter_view_bloom">Bloom</string>
+    <string name="sun">Sun</string>
+    <string name="partial_shade">Partial shade</string>
+    <string name="shade">Shade</string>
+    <string name="clear">Clear</string>
+    <string name="apply">Apply</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="field_not_empty">This field must not be empty</string>
+    <string name="correct_email">Enter the correct email</string>
+</resources>
