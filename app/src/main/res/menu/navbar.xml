@@ -7,7 +7,7 @@
         android:title="Account" />
 
     <item
-        android:id="@+id/info"
+        android:id="@+id/about"
         android:icon="@drawable/info"
         android:title="Info" />
 

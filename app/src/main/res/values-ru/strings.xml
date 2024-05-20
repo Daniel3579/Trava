@@ -9,4 +9,17 @@
     <string name="correct_email">Введите корректный email</string>
     <string name="signup">Зарегистрироваться</string>
     <string name="password">Пароль</string>
+    <string name="about_application">
+        Более 1500 растений в приложении\n
+        \n
+        Предоставляет информацию о:\n
+        – Категории\n
+        – Зоне морозостойкости\n
+        – Уровне освещения\n
+        – Периоде цветения\n
+        \n
+        Доступные функции:\n
+        – Поиск по названию растения\n
+        – Фильтр по параметрам\n
+    </string>
 </resources>

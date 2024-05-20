@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
                 recyclerView.visibility = View.VISIBLE
                 searchView.visibility = View.VISIBLE
             }
+
             filterView.isVisible -> {
                 filterView.visibility = View.GONE
                 recyclerView.visibility = View.VISIBLE
@@ -308,7 +309,7 @@ class MainActivity : AppCompatActivity() {
         val clearButton = findViewById<Button>(R.id.button_clear)
 
         filterMenuButton.setOnClickListener {
-            filterView.visibility = View.VISIBLE
+            filterView.visibility = View.VISIBLE //fragment
             searchView.visibility = View.GONE
             recyclerView.visibility = View.GONE
         }
@@ -334,7 +335,7 @@ class MainActivity : AppCompatActivity() {
                 adapter.setFilteredList(searchFirst12Items())
             }
 
-            filterView.visibility = View.GONE
+            filterView.visibility = View.GONE //fragment
             recyclerView.visibility = View.VISIBLE
             searchView.visibility = View.VISIBLE
 
@@ -359,7 +360,7 @@ class MainActivity : AppCompatActivity() {
                 adapter.setFilteredList(searchFirst12Items())
             }
 
-            filterView.visibility = View.GONE
+            filterView.visibility = View.GONE //fragment
             recyclerView.visibility = View.VISIBLE
             searchView.visibility = View.VISIBLE
 

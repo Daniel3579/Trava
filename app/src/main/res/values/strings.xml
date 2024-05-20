@@ -22,4 +22,17 @@
     <string name="password">Password</string>
     <string name="field_not_empty">This field must not be empty</string>
     <string name="correct_email">Enter the correct email</string>
+    <string name="about_application">
+        Over 1500 plants in the app\n
+        \n
+        Provides information about:\n
+        – Categories\n
+        – Hardiness zone\n
+        – Luminosity level\n
+        – Bloom period\n
+        \n
+        Available features:\n
+        – Search by plant name\n
+        – Filter by parameters
+    </string>
 </resources>

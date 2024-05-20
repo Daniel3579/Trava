@@ -8,7 +8,7 @@
         android:id="@+id/loginActivity"
         android:name="land.trava.LoginActivity"
         android:label="login"
-        tools:layout="@layout/login" />
+        tools:layout="@layout/login_fragment" />
     <activity
         android:id="@+id/mainActivity"
         android:name="land.trava.MainActivity"
